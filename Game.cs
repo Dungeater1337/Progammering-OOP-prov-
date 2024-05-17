@@ -23,9 +23,7 @@ namespace Progammering_OOP_prov_
             enemies = new List<Enemy>()
             {
                 // fiender  med hp och damage
-                new Enemy("Skeleton", 100, 20),
-                new Enemy("Bat", 55, 10),
-                new Enemy("Orc", 120, 30)
+                new Skeleton("Skeleton", 100, 0, 25) 
             };
             scores = new List<int>();
         }
@@ -46,21 +44,23 @@ namespace Progammering_OOP_prov_
 
         public void Play()
         {
-            while (true)
+            bool running = true;
+            while (running == true)
             {
-                Console.WriteLine("\n|-----------|Dark Dungeon IV|----------|");
-                Console.WriteLine("|---------+A New Battle Begins!+--------|");
+                Console.WriteLine("\n|--------------|Dark Dungeon I : Legacy of the Flame|--------------|");
+                Console.WriteLine("          |-------------+A New Battle Begins!+-----------|\n");
 
                 foreach (var enemy in enemies)
                 {
-                    Console.WriteLine($"A wild {enemy.GetName()} appears!");
-                    while( player.GetHealth() > 0 && enemy.GetHealth() < 0)
+                    Console.WriteLine($"  A wild {enemy.GetName()} appears!\n");
+                    while( player.GetHealth() > 0 && enemy.GetHealth() > 0)
                     {
-                        Console.WriteLine("----------------------------------------------");
-                        Console.WriteLine($"{player.GetName} Health: {player.GetHealth()}\n{enemy.GetName()} Health: {enemy.GetHealth()}");
-                        Console.WriteLine("----------------------------------------------");
-                        Console.WriteLine("\nChoose an action:\n1. Attack\n2. Attempt Heal");
+                        Console.WriteLine("|----------------------------------------------|");
+                        Console.WriteLine($"  {player.GetName()} Health: {player.GetHealth()}\n  {enemy.GetName()} Health: {enemy.GetHealth()}");
+                        Console.WriteLine("|----------------------------------------------|");
+                        Console.WriteLine("\nChoose an action:\n1. Attack\n2. Attempt Heal\n");
                         string choice = Console.ReadLine();
+                        Console.WriteLine("");
 
                         if(choice == "1")
                         {
@@ -68,6 +68,7 @@ namespace Progammering_OOP_prov_
                             if(enemy.GetHealth() > 0)
                             {
                                 player.SetHealth(player.GetHealth() - enemy.Attack());
+                                
                             }
                         }
 
@@ -76,9 +77,9 @@ namespace Progammering_OOP_prov_
                             player.Heal();
                         }
 
-                        if(player.GetHealth() > 0)
+                        if(player.GetHealth() <= 0)
                         {
-                            Console.WriteLine("YOU DIED");
+                            Console.WriteLine("YOU DIED!");
                             return;
                         }
 
@@ -88,12 +89,12 @@ namespace Progammering_OOP_prov_
                         }
                     }
 
-                    Console.WriteLine("You've won the Battle!");
+                    Console.WriteLine("\nYou've won the Battle!");
                     SaveScore();
                     Console.WriteLine("Play again? (y/n)");
                     if(Console.ReadLine() !=  "y")
                     {
-                        break;
+                        running = false;
                     }
                     player.SetHealth(150);
                 }

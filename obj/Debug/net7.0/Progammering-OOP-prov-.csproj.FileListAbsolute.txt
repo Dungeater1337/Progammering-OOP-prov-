@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\bin\Debug\net7.0\Progammering-OOP-prov-.exe
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\bin\Debug\net7.0\Progammering-OOP-prov-.deps.json
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\bin\Debug\net7.0\Progammering-OOP-prov-.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\bin\Debug\net7.0\Progammering-OOP-prov-.dll
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\bin\Debug\net7.0\Progammering-OOP-prov-.pdb
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\Progammering-OOP-prov-.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\Progammering-OOP-prov-.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\Progammering-OOP-prov-.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\Progammering-OOP-prov-.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\Progammering-OOP-prov-.dll
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\refint\Progammering-OOP-prov-.dll
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\Progammering-OOP-prov-.pdb
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\Progammering-OOP-prov-.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\slutprojekt\Progammering-OOP-prov-\obj\Debug\net7.0\ref\Progammering-OOP-prov-.dll
