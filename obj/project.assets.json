@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\slutprojekt\\Progammering-OOP-prov-\\Progammering-OOP-prov-.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\Progammering-OOP-prov-\\Progammering-OOP-prov-.csproj",
       "projectName": "Progammering-OOP-prov-",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\slutprojekt\\Progammering-OOP-prov-\\Progammering-OOP-prov-.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\Progammering-OOP-prov-\\Progammering-OOP-prov-.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\slutprojekt\\Progammering-OOP-prov-\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\Progammering-OOP-prov-\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -5,12 +5,17 @@ using System.Linq;
 
 namespace Progammering_OOP_prov_
 {
-    class Skeleton : Enemy 
+    class Orc : Enemy 
     {
-        //Konstruktor för skelett 
-        public Skeleton(string name, int health, int damage) : base (name, health, damage) { }
+        private int Berserk;
 
-        //det här är Skeletons Attack metod
+        // Konstruktor för Orc
+        public Orc(string name, int health, int damage, int berserk) : base (name, health, damage) 
+        {
+            this.Berserk = berserk;
+        }
+
+        // Attack metod för 'Orc'
         public override int Attack()
         {
             //Använder random för att skapa 'chances' för att få crit eller inte
@@ -18,21 +23,20 @@ namespace Progammering_OOP_prov_
             // Skelett har 25% att träffa critical-strike
             if(rnd.Next(1, 5) == 1)
             {
-                //om Crit träffas så kan skeleton göra 21 - 35 skada
-                int damage = rnd.Next(21, 36);
+                //om Crit träffas så kan Orc göra 25 - 45 skada
+                int damage = rnd.Next(25, 46);
                 Console.WriteLine($"{GetName()} lands crit for {damage} damage!");
                 //returna damage
                 return damage;
             }
             else
             {
-                //Om det inte är crit så kan skeleton endast skada 10 - 20 skada
-                int damage = rnd.Next(10, 21);
+                //Om det inte är crit så kan Orc endast skada 15 - 30 skada
+                int damage = rnd.Next(15, 31);
                 Console.WriteLine($"{GetName()} hits attack for {damage} damage!");
                 // returna damage 
                 return damage;
             }
         }
-
     }
 }
