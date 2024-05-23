@@ -7,13 +7,8 @@ namespace Progammering_OOP_prov_
 {
     class Orc : Enemy 
     {
-        private int Berserk;
-
         // Konstruktor för Orc
-        public Orc(string name, int health, int damage, int berserk) : base (name, health, damage) 
-        {
-            this.Berserk = berserk;
-        }
+        public Orc(string name, int health, int damage, int berserk) : base (name, health, damage) { }
 
         // Attack metod för 'Orc'
         public override int Attack()
